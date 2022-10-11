@@ -1,1 +1,120 @@
 \chapter{Error Analysis and Procedural Errors}
+
+\section{Front-End Error - RSS}
+
+% \begin{equation}
+%   \begin{split}
+%   \\[-1ex]
+%      & \Delta\sigma_{V,ij} = \\
+%       &\begin{multlined}[0.9\linewidth]
+%       \sqrt{\Delta\sigma_{x,ij}^2 + \Delta\sigma_{y,ij}^2 + \Delta\sigma_{z,ij}^2 - (\Delta\sigma_{x,ij} * \Delta\sigma_{y,ij} + \Delta\sigma_{y,ij} * \Delta\sigma_{z,ij} + \Delta\sigma_{z,ij} * \Delta\sigma_{x,ij})}\hdashrule[2.66ex]{1.8em}{0.4pt}{2pt} \\[0.5ex]
+%        {\hdashrule[2.67ex]{1.8em}{0.4pt}{2pt}}\mkern -4mu\overline{\rule{0pt}{2.4ex}+ 3 * (\Delta\tau_{xy,ij}^2 + \Delta\tau_{yz,ij}^2 + \Delta\tau_{zx,ij}^2)}
+%       \end{multlined}
+%       \end{split}
+%   \end{equation}
+%   \end{fleqn}
+
+
+\begin{equation*}
+  \begin{split}
+  \\[-1ex]
+      & \text{3/8" Steel Ball} \; RSS = \\
+      &\begin{multlined}[0.9\linewidth]
+      \sqrt{\left( \frac{0.005m}{0.200m} \right)^2 + \left( \frac{0.005m}{0.400m} \right)^2 + \left( \frac{0.005m}{0.600m} \right)^2 + \left( \frac{0.005m}{0.800m} \right)^2 + \left( \frac{0.005m}{1.000m} \right)^2 + \left( \frac{0.00005s}{0.2025s} \right)^2 }\hdashrule[2.66ex]{1.8em}{0.4pt}{2pt} \\[0.5ex]
+      {\hdashrule[2.67ex]{1.8em}{0.4pt}{2pt}}\mkern -4mu\overline{\rule{0pt}{2.4ex} + \left( \frac{0.00005s}{0.2868s} \right)^2 + \left( \frac{0.00005s}{0.3492s} \right)^2 + \left( \frac{0.00005s}{0.4040s} \right)^2 + \left( \frac{0.00005s}{0.4519s} \right)^2} \cdot 100\% = 3.0\%
+      \end{multlined}
+  \end{split}
+\end{equation*}
+\end{fleqn}
+
+\begin{equation*}
+  \text{3/8" Steel Ball} \; RSS = \sqrt{\left( \frac{0.005m}{0.200m} \right)^2 + \left( \frac{0.00005s}{0.2025s} \right)^2} \cdot 100\% = 2.5\%
+\end{equation*}
+
+
+
+\begin{equation*}
+  \begin{split}
+  \\[-1ex]
+      & \text{1/2" Steel Ball} \; RSS = \\
+      &\begin{multlined}[0.9\linewidth]
+      \sqrt{\left( \frac{0.005m}{0.200m} \right)^2 + \left( \frac{0.005m}{0.400m} \right)^2 + \left( \frac{0.005m}{0.600m} \right)^2 + \left( \frac{0.005m}{0.800m} \right)^2 + \left( \frac{0.005m}{1.000m} \right)^2 + \left( \frac{0.00005s}{0.2014} \right)^2 }\hdashrule[2.66ex]{1.8em}{0.4pt}{2pt} \\[0.5ex]
+       {\hdashrule[2.67ex]{1.8em}{0.4pt}{2pt}}\mkern -4mu\overline{\rule{0pt}{2.4ex} + \left( \frac{0.00005s}{0.2846s} \right)^2 + \left( \frac{0.00005s}{0.3485} \right)^2 + \left( \frac{0.00005s}{0.4033} \right)^2 + \left( \frac{0.00005s}{0.4509s} \right)^2} \cdot 100\% = 3.0\%
+      \end{multlined}
+  \end{split}
+\end{equation*}
+\end{fleqn}
+
+\begin{equation*}
+  \text{1/2" Steel Ball} \; RSS = \sqrt{\left( \frac{0.005m}{0.200m} \right)^2 + \left( \frac{0.00005s}{0.2014s} \right)^2} \cdot 100\% = 2.5\%
+\end{equation*}
+
+\section{Back-End Error}
+
+In this case, percent error should be used because this is an experimental
+result being compared to the accepted known value of $g = 9.8\frac{m}{s^2}$
+With the following percent error calculated, none of the data points were over 
+the Front-End Error percentage. In general the calulated gravitational acceleration
+was very close to the theoretical value of Earth's $g = 9.8\frac{m}{s^2}$ 
+
+
+\begin{equation*}
+  3/8" \; ball: \hspace{1cm} \%error = \frac{|E - K|}{K} * 100\%
+\end{equation*}
+
+\begin{equation*}
+  = \text{\%error for 0.200$m$} = \frac{|9.819\frac{m}{s^2} - 9.755\frac{m}{s^2}|}{9.755\frac{m}{s^2}} * 100\% = 0.71\% \; (0.707\%)
+\end{equation*}
+
+\begin{equation*}
+  = \text{\%error for 0.400$m$} = \frac{|9.819\frac{m}{s^2} - 9.726\frac{m}{s^2}|}{9.726\frac{m}{s^2}} * 100\% = 0.96\% \; (0.956\%)
+\end{equation*}
+
+\begin{equation*}
+  = \text{\%error for 0.600$m$} = \frac{|9.819\frac{m}{s^2} - 9.841\frac{m}{s^2}|}{9.841\frac{m}{s^2}} * 100\% = 0.22\% \; (0.223\%)
+\end{equation*}
+
+\begin{equation*}
+  = \text{\%error for 0.800$m$} = \frac{|9.819\frac{m}{s^2} - 9.803\frac{m}{s^2}|}{9.803\frac{m}{s^2}} * 100\% = 0.16\% \; (0.163\%)
+\end{equation*}
+
+\begin{equation*}
+  = \text{\%error for 1.000$m$} = \frac{|9.819\frac{m}{s^2} - 9.794\frac{m}{s^2}|}{9.794\frac{m}{s^2}} * 100\% = 0.26\% \; (0.255\%)
+\end{equation*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{equation*}
+  1/2" \; ball: \hspace{1cm} \%error = \frac{|E - K|}{K} * 100\%
+\end{equation*}
+
+\begin{equation*}
+  = \text{\%error for 0.200$m$} = \frac{|9.824\frac{m}{s^2} - 9.824\frac{m}{s^2}|}{9.824\frac{m}{s^2}} * 100\% = 0.38\% \; (0.375\%)
+\end{equation*}
+
+\begin{equation*}
+  = \text{\%error for 0.400$m$} = \frac{|9.824\frac{m}{s^2} - 9.877\frac{m}{s^2}|}{9.877\frac{m}{s^2}} * 100\% = 0.54\% \; (0.537\%)
+\end{equation*}
+
+\begin{equation*}
+  = \text{\%error for 0.600$m$} = \frac{|9.824\frac{m}{s^2} - 9.880\frac{m}{s^2}|}{9.880\frac{m}{s^2}} * 100\% = 0.57\% \; (0.567\%)
+\end{equation*}
+
+\begin{equation*}
+  = \text{\%error for 0.800$m$} = \frac{|9.824\frac{m}{s^2} - 9.837\frac{m}{s^2}|}{9.837\frac{m}{s^2}} * 100\% = 0.13\% \; (0.132\%)
+\end{equation*}
+
+\begin{equation*}
+  = \text{\%error for 1.000$m$} = \frac{|9.824\frac{m}{s^2} - 9.837\frac{m}{s^2}|}{9.837\frac{m}{s^2}} * 100\% = 0.13\% \; (0.132\%)
+\end{equation*}
+
+\section{Potential Cause of Error}
+There are a number of potential causes to the error presented in this lab 
+experiment. The two most notable causes of error are as follows:
+\begin{itemize}
+  \item Miscalculated height - although we were aiming for 0.005m within each labeled
+    drop height. There is possibilty that, that was not achieved for every drop.
+  \item Timing limitations - the timing mechanism is only accyrate a few decimal places
+  \item a third cause to error is the disregarded air resistance. Although stated 
+\end{itemize}
+    
