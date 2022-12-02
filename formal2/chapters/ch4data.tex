@@ -1,11 +1,14 @@
-\let\clearpage\relax\chapter{Data}
-\endgroup
+% \let\clearpage\relax\chapter{Data}
+% \endgroup
+\newgeometry{left = 25mm}
+\chapter{Data}
 
-\begin{tabular}{ |p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}| }
+\begin{tabular}{ |p{2cm}|p{2cm}|p{4cm}|p{2cm}|p{2cm}|p{2cm}| }
   \hline
   \multicolumn{6}{|c|}{Data Collected} \\
   \hline
-  Configuration of Mass & Mass in kg & Uncertainty +$-m$ based on the meter stick& $x_i$ in meters & $x_f$ in meters & Uncertainty +$-m$ based on scale\\
+  Configuration of Mass & Mass in kg & Uncertainty +$-$ in meters due to meter stick
+  & $x_i$ in meters & $x_f$ in meters & Uncertainty +$-$ kg to due scale\\
   \hline
   \#1& 1.036 &  0.0005 & 0.782 & 0.784 & 0.0005\\
   \hline
@@ -24,3 +27,5 @@
   \#8& 2.530 &  0.0005 & 0.782 & 0.822 & 0.0005\\
   \hline
 \end{tabular}
+
+\restoregeometry

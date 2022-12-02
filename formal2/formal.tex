@@ -3,13 +3,11 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 %\usepackage[showframe]{geometry}
+\usepackage{geometry}
 \usepackage{mathtools, nccmath}
 \usepackage{dashrule}
 \usepackage[utf8]{inputenc}
-% \usepackage{etoolbox}
-% \makeatletter
-% \patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
-% \makeatother
+\usepackage{changepage}
 
 \title{\Huge Formal Lab\\
 {\huge Hooke's Law\\
@@ -26,13 +24,13 @@
 
 % \tableofcontents
 
-\include{chapters/ch1purpose}
-\include{chapters/ch2theory}
+\include{chapters/ch1purpose} % has ch2 theory inside as well
+% \include{chapters/ch2theory}
 \include{chapters/ch3procedure}
 \include{chapters/ch4data}
 \include{chapters/ch5analysis}
 \include{chapters/ch6errorAnalysisAndProceduralErrors}
-\include{chapters/ch7conclusion}
-\include{chapters/ch8suggestionsForImprovement}
+\include{chapters/ch7conclusion} % has ch8 suggestions for improv inside as well
+% \include{chapters/ch8suggestionsForImprovement}
 
 \end{document}
