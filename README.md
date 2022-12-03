@@ -5,8 +5,8 @@ required to create 2 formal lab write-up. Because I heard by Computer Science
 professor Begalli uses the programming language LaTeX, I decided to give it a
 shot and use LaTeX to create my formal lab write-ups. 
 
-*Formal 1: Lab about Measuring g
-*Formal 2: Hooke's Law lab
+- *Formal 1: Lab about Measuring g
+- *Formal 2: Hooke's Law lab
 
 Other labs I did but did not need a formal on:
 - Measuring g*
