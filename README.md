@@ -15,8 +15,6 @@ Other labs I did but did not need a formal on:
 - Conservation of Energy and Momentum
 - Moment of Inertia
 - Hooke's Law*
-- Rotational Inertia of a point mass
-- Centripetal Force / Fea Workshop
 - Archimede's Principle & Simple Pendulum
 
 Topics learned in class:
