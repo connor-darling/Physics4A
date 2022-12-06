@@ -1,0 +1,126 @@
+\documentclass{report}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+%\usepackage[showframe]{geometry}
+\usepackage{geometry}
+\usepackage{mathtools, nccmath}
+\usepackage{dashrule}
+\usepackage[utf8]{inputenc}
+\usepackage{changepage}
+\usepackage{gensymb}
+
+\title{\Huge Equations Live Here\\
+{\huge Physics 4A}}
+\author{
+  \Large Connor Darling\\\\
+}
+\date{December 2022}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\chapter{Equations for Moment of Inertia Lab}
+\section*{Theoretical Times}
+
+\fbox{\begin{minipage}{20em}
+  \begin{center}
+    \noindent Theoretical time for solid cylinder at 5\degree
+    \begin{equation*}
+      \sqrt{ \frac{2(1 + 0.5) \cdot 1.000}{9.8 \sin (5)} } = 1.8741 \; sec
+    \end{equation*}
+
+    \noindent Theoretical time for hollow cylinder at 5\degree
+    \begin{equation*}
+      \sqrt{ \frac{2(1 + 1) \cdot 1.000}{9.8 \sin (5)} } = 2.1641 \; sec
+    \end{equation*}
+
+    \noindent Theoretical time for sphere at 5\degree
+    \begin{equation*}
+      \sqrt{ \frac{2(1 + \frac{2}{5}) \cdot 1.000}{9.8 \sin (5)} } = 1.8106 \; sec
+    \end{equation*}
+  \end{center}
+\end{minipage}}\\\\
+
+\fbox{\begin{minipage}{20em}
+  \begin{center}
+    \noindent Theoretical time for solid cylinder at 10\degree
+    \begin{equation*}
+      \sqrt{ \frac{2(1 + 0.5) \cdot 1.000}{9.8 \sin (10)} } = 1.3330 \; sec
+    \end{equation*}
+
+    \noindent Theoretical time for hollow cylinder at 10\degree
+    \begin{equation*}
+      \sqrt{ \frac{2(1 + 1) \cdot 1.000}{9.8 \sin (10)} } = 1.5392 \; sec
+    \end{equation*}
+
+    \noindent Theoretical time for sphere at 10\degree
+    \begin{equation*}
+      \sqrt{ \frac{2(1 + \frac{2}{5}) \cdot 1.000}{9.8 \sin (10)} } = 1.2878 \; sec
+    \end{equation*}
+  \end{center}
+\end{minipage}}
+
+\section*{RSS Error}
+
+\begin{center}
+  \noindent Greatest contributors are used to calculate RSS error
+  \begin{equation*}
+      \text{RSS} = \sqrt{ \left( \frac{0.00005 \; sec}{1.2037 \; sec} \right)^2 
+      + \left( \frac{0.0005 m}{1.000 m} \right)^2
+      + \left( \frac{0.00005 m}{0.0255 m} \right)^2} \times 100\% = 1.02\%
+  \end{equation*}
+\end{center}
+
+\section*{Back-End Error}
+
+\begin{center}
+  \noindent Percent error should be used because we are calculating a theoretical
+  value and comparing an experimental value with that number rather than comparing
+  two unknown experimental values.\\
+  \begin{equation*}
+      \% \text{error} = \frac{|E - K|}{K} \times 100 \%
+  \end{equation*}
+
+  % \begin{equation*}
+  %   \%\text{difference}= \frac{|E_1 - E_2|}{\frac{E_1 + E_2}{2}} \times 100\% = 
+  %   \frac{|276.52 - 278|}{\frac{276.52 + 278}{2}} \times 100\% = 0.53\% \; (0.534\%)
+  % \end{equation*}
+
+  \noindent Where $E =$ experimental value and $K =$ theoretical value.
+
+  % ! 5 degrees
+  \begin{equation*}
+      \% \text{error for solid cylinder at 5\degree} 
+      = \frac{|1.9279 \; sec - 1.8741 \; sec|}{1.8741 \; sec} \times 100\% = 2.87\%
+  \end{equation*}\\
+
+  \begin{equation*}
+      \% \text{error for hollow cylinder at 5\degree} 
+      = \frac{|\; 2.1946 sec - 2.1641 \; sec|}{2.1641 \; sec} \times 100\% = 1.41\%
+  \end{equation*}\\
+
+  \begin{equation*}
+      \% \text{error for sphere at 5\degree} 
+      = \frac{|1.8141 \; sec - 1.8106 \; sec|}{1.8106 \; sec} \times 100\% = 0.19\%
+  \end{equation*}\\
+  
+  % ! 10 degrees
+  \begin{equation*}
+      \% \text{error for solid cylinder at 10\degree} 
+      = \frac{|1.2564 \; sec - 1.3330 \; sec|}{1.3330 \; sec} \times 100\% = 5.75\%
+  \end{equation*}\\
+
+  \begin{equation*}
+      \% \text{error for hollow cylinder at 10\degree} 
+      = \frac{|1.4367 \; sec - 1.5392 \; sec|}{1.5392 \; sec} \times 100\% = 6.66\%
+  \end{equation*}\\
+
+  \begin{equation*}
+      \% \text{error for sphere at 10\degree} 
+      = \frac{|1.2151 \; sec - 1.2878 \; sec|}{1.2878 \; sec} \times 100\% = 5.65\%
+  \end{equation*}\\
+\end{center}
+
+\end{document}
