@@ -41,7 +41,7 @@
       \sqrt{ \frac{2(1 + \frac{2}{5}) \cdot 1.000}{9.8 \sin (5)} } = 1.8106 \; sec
     \end{equation*}
   \end{center}
-\end{minipage}}\\\\
+\end{minipage}}\\
 
 \fbox{\begin{minipage}{20em}
   \begin{center}
@@ -121,6 +121,127 @@
       \% \text{error for sphere at 10\degree} 
       = \frac{|1.2151 \; sec - 1.2878 \; sec|}{1.2878 \; sec} \times 100\% = 5.65\%
   \end{equation*}\\
+\end{center}
+
+\section{More Analysis (Q4)}
+
+\noindent Using:
+\begin{equation*}
+  \Delta t = \frac{1}{R_2} \sqrt{ \frac {D(3R_2^2 + R_1^2)}{g \sin \theta} }
+\end{equation*}
+
+\section*{Calculated $\Delta t$ for hollow cylinder}
+
+\noindent Trial using $\theta = 5\degree$:\\
+\begin{equation*}
+  \Delta t = \frac{1}{0.0285} \sqrt{ \frac {1.000(3 \cdot (0.0255)^2 + 0.0285^2)}{9.8 \sin (5)} } = 1.9957 \; sec
+\end{equation*}
+
+\noindent Trial using $\theta = 10\degree$:
+
+\begin{equation*}
+  \Delta t = \frac{1}{0.0285} \sqrt{ \frac {1.000(3 \cdot (0.0255)^2 + 0.0285^2)}{9.8 \sin (10)} } = 1.4138 \; sec
+\end{equation*}
+
+\begin{center}
+  \begin{tabular} { |p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}| }
+    \hline
+    \multicolumn{5}{|c|}{ Comparing Values } \\
+    \hline 
+    \centering & Theoretical using C as 1 & Theoretical using an $R_1$ \& $R_2$ &  Experimental & \%error \\ 
+    \hline
+    $\theta = 5\degree$ & $2.1641 \; sec$ & $1.9957 \; sec$ & $2.1946 \; sec$ & $1.41\%$ \\
+    \hline
+    $\theta = 10\degree$ & $1.5392 \; sec$ & $1.4138 \; sec$ & $1.4367 \; sec$ & $6.66\%$ \\
+    \hline
+  \end{tabular}
+\end{center}
+
+Analyzing these results show that using $C = 1$ was closer to the experimental value than
+using two radii for the $5\degree$ trial. However, for the $10\degree$ trial, the result 
+is the opposite. Factoring in the \%error, our error was much higher for the $10\degree$ trial.
+This tells me that with minimal error, using $C = 1$ is more accurate is this context.
+
+\section*{4 - Procedural Errors and Improvements}
+
+Some of the contributing factors the errors in this lab are, inclometer limitations, calliper limitations,
+and photogate limitations. Though the goal of these devices are to attempt to give the best reading possible,
+the limitation to a specific decimal places allows room for error, which is why we allowed our data to be +-
+a certain amount. A big contributor to error could be releasing the ball. It is difficult to release the ball exactly 
+straight which not doing so would default the goal of the lab leading to error. Another factor for error is the 
+initial velocity of the rolled object. It is difficult to realse the object from rest with out triggering 
+the photogate timer, which also could lead to error. I would suggest that students or lab participants use something
+to help keep the object to roll in a straight line without disrupting its velocity.
+
+% \newgeometry{top=5mm, bottom=20mm}
+\chapter{Conservation of Linear Momentum \& Kinetic Energy}
+
+\begin{center}
+  \begin{tabular} { |p{0.75cm}|p{1.4cm}|p{1.45cm}|p{1.4cm}|p{1.45cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}| }
+    \hline
+    \multicolumn{13}{|c|}{ Analysis and Error } \\
+    \hline 
+    \centering Trial \# & $v_{1i}$ (m/s) & $v_{1f}$ (m/s) & $v_{2i}$ (m/s) & $v_{2f}$ (m/s) & $P_{i}$ system (kgm/s)& $P_{f}$ system (kgm/s) & \% diff in $P$ & $K_{i}$ system (J) & $K_{f}$ system (J) & \% diff in $K$ \\ 
+    \hline
+    1 & c2 & c3 & c4 & c5 & c6 & c7 & c8 & c9 & c10 & c11 & c12 & c13 \\
+    2 & c2 & c3 & c4 & c5 & c6 & c7 & c8 & c9 & c10 & c11 & c12 & c13 \\
+    3 & c2 & c3 & c4 & c5 & c6 & c7 & c8 & c9 & c10 & c11 & c12 & c13 \\
+    4 & c2 & c3 & c4 & c5 & c6 & c7 & c8 & c9 & c10 & c11 & c12 & c13 \\
+    5 & c2 & c3 & c4 & c5 & c6 & c7 & c8 & c9 & c10 & c11 & c12 & c13 \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular} { |p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}| }
+    \hline
+    \multicolumn{5}{|c|}{ Error } \\
+    \hline 
+    \centering Trial\\ \# & Theoretical using C as 1 & Theoretical using an $R_1$ \& $R_2$ &  Experimental & \%error \\ 
+    \hline
+    \# 1& $2.1641 \; sec$ & $1.9957 \; sec$ & $2.1946 \; sec$ & $1.41\%$ \\
+    \hline
+    \# 2& $1.5392 \; sec$ & $1.4138 \; sec$ & $1.4367 \; sec$ & $6.66\%$ \\
+    \hline
+    \# 3& $1.5392 \; sec$ & $1.4138 \; sec$ & $1.4367 \; sec$ & $6.66\%$ \\
+    \hline
+    \# 4& $1.5392 \; sec$ & $1.4138 \; sec$ & $1.4367 \; sec$ & $6.66\%$ \\
+    \hline
+    \# 5& $1.5392 \; sec$ & $1.4138 \; sec$ & $1.4367 \; sec$ & $6.66\%$ \\
+    \hline
+  \end{tabular}
+\end{center}
+
+\begin{center}
+  \begin{tabular} { |p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}| }
+    \hline
+    \multicolumn{5}{|c|}{ Results } \\
+    \hline 
+    \centering Trial # & Theoretical using C as 1 & Theoretical using an $R_1$ \& $R_2$ &  Experimental & \%error \\ 
+    \hline
+    \# 1& $2.1641 \; sec$ & $1.9957 \; sec$ & $2.1946 \; sec$ & $1.41\%$ \\
+    \hline
+    \# 2& $1.5392 \; sec$ & $1.4138 \; sec$ & $1.4367 \; sec$ & $6.66\%$ \\
+    \hline
+    \# 3& $1.5392 \; sec$ & $1.4138 \; sec$ & $1.4367 \; sec$ & $6.66\%$ \\
+    \hline
+    \# 4& $1.5392 \; sec$ & $1.4138 \; sec$ & $1.4367 \; sec$ & $6.66\%$ \\
+    \hline
+    \# 5& $1.5392 \; sec$ & $1.4138 \; sec$ & $1.4367 \; sec$ & $6.66\%$ \\
+    \hline
+  \end{tabular}
+\end{center}
+% \restoregeometry
+
+\section*{RSS Error}
+
+\begin{center}
+  \noindent Greatest contributors are used to calculate RSS error
+  \begin{equation*}
+      \text{RSS} = \sqrt{ \left( \frac{0.00005kg}{0.2155kg} \right)^2 
+      + \left( \frac{0.005 m/s}{0.0m/s} \right)^2}
+      \times 100\% = 0.02\%
+  \end{equation*}
 \end{center}
 
 \end{document}
