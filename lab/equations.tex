@@ -173,75 +173,76 @@ initial velocity of the rolled object. It is difficult to realse the object from
 the photogate timer, which also could lead to error. I would suggest that students or lab participants use something
 to help keep the object to roll in a straight line without disrupting its velocity.
 
-% \newgeometry{top=5mm, bottom=20mm}
-\chapter{Conservation of Linear Momentum \& Kinetic Energy}
-
-\begin{center}
-  \begin{tabular} { |p{0.75cm}|p{1.4cm}|p{1.45cm}|p{1.4cm}|p{1.45cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}| }
-    \hline
-    \multicolumn{13}{|c|}{ Analysis and Error } \\
-    \hline 
-    \centering Trial \# & $v_{1i}$ (m/s) & $v_{1f}$ (m/s) & $v_{2i}$ (m/s) & $v_{2f}$ (m/s) & $P_{i}$ system (kgm/s)& $P_{f}$ system (kgm/s) & \% diff in $P$ & $K_{i}$ system (J) & $K_{f}$ system (J) & \% diff in $K$ \\ 
-    \hline
-    1 & c2 & c3 & c4 & c5 & c6 & c7 & c8 & c9 & c10 & c11 & c12 & c13 \\
-    2 & c2 & c3 & c4 & c5 & c6 & c7 & c8 & c9 & c10 & c11 & c12 & c13 \\
-    3 & c2 & c3 & c4 & c5 & c6 & c7 & c8 & c9 & c10 & c11 & c12 & c13 \\
-    4 & c2 & c3 & c4 & c5 & c6 & c7 & c8 & c9 & c10 & c11 & c12 & c13 \\
-    5 & c2 & c3 & c4 & c5 & c6 & c7 & c8 & c9 & c10 & c11 & c12 & c13 \\
-    \hline
-  \end{tabular}
-\end{center}
-
-\begin{center}
-  \begin{tabular} { |p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}| }
-    \hline
-    \multicolumn{5}{|c|}{ Error } \\
-    \hline 
-    \centering Trial\\ \# & Theoretical using C as 1 & Theoretical using an $R_1$ \& $R_2$ &  Experimental & \%error \\ 
-    \hline
-    \# 1& $2.1641 \; sec$ & $1.9957 \; sec$ & $2.1946 \; sec$ & $1.41\%$ \\
-    \hline
-    \# 2& $1.5392 \; sec$ & $1.4138 \; sec$ & $1.4367 \; sec$ & $6.66\%$ \\
-    \hline
-    \# 3& $1.5392 \; sec$ & $1.4138 \; sec$ & $1.4367 \; sec$ & $6.66\%$ \\
-    \hline
-    \# 4& $1.5392 \; sec$ & $1.4138 \; sec$ & $1.4367 \; sec$ & $6.66\%$ \\
-    \hline
-    \# 5& $1.5392 \; sec$ & $1.4138 \; sec$ & $1.4367 \; sec$ & $6.66\%$ \\
-    \hline
-  \end{tabular}
-\end{center}
-
-\begin{center}
-  \begin{tabular} { |p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}| }
-    \hline
-    \multicolumn{5}{|c|}{ Results } \\
-    \hline 
-    \centering Trial # & Theoretical using C as 1 & Theoretical using an $R_1$ \& $R_2$ &  Experimental & \%error \\ 
-    \hline
-    \# 1& $2.1641 \; sec$ & $1.9957 \; sec$ & $2.1946 \; sec$ & $1.41\%$ \\
-    \hline
-    \# 2& $1.5392 \; sec$ & $1.4138 \; sec$ & $1.4367 \; sec$ & $6.66\%$ \\
-    \hline
-    \# 3& $1.5392 \; sec$ & $1.4138 \; sec$ & $1.4367 \; sec$ & $6.66\%$ \\
-    \hline
-    \# 4& $1.5392 \; sec$ & $1.4138 \; sec$ & $1.4367 \; sec$ & $6.66\%$ \\
-    \hline
-    \# 5& $1.5392 \; sec$ & $1.4138 \; sec$ & $1.4367 \; sec$ & $6.66\%$ \\
-    \hline
-  \end{tabular}
-\end{center}
-% \restoregeometry
-
+\chapter{Conservation of Energy and Momentum}
 \section*{RSS Error}
 
 \begin{center}
   \noindent Greatest contributors are used to calculate RSS error
   \begin{equation*}
-      \text{RSS} = \sqrt{ \left( \frac{0.00005kg}{0.2155kg} \right)^2 
-      + \left( \frac{0.005 m/s}{0.0m/s} \right)^2}
-      \times 100\% = 0.02\%
+      \text{RSS\% Error} = \sqrt{ \left( \frac{0.00005kg}{0.2156kg} \right)^2 
+      + \left( \frac{0.005 m/s}{0.18m/s} \right)^2}
+      \times 100\% = 2.78\%
   \end{equation*}
 \end{center}
+
+\section*{Back-End Error \% Difference}
+
+\begin{center}
+  \begin{equation*}
+    \text{\% Difference} = \frac{|E_1 - E_2|}{\frac{(E_1 + E_2)}{2}} \times 100\% 
+    = \frac{|0.11 \frac{kgm}{s} - 0.09 \frac{kgm}{s}|}{\frac{(0.11 \frac{kgm}{s}+ 0.09 \frac{kgm}{s})}{2}} \times 100\% = 19.50\%
+  \end{equation*}
+\end{center}
+
+\noindent Percent difference should be used to calculate error because we are comparing the 
+initial momentum versus the final momentum. This explicit calculation was done for Trial\#1's
+momentum values. This was an elastic collision where theoretically the inital momentum and
+final momentum should be the same, but as shown this is not the case. This shows that there was
+definitely error involved.
+
+\newpage
+
+\section*{4 - Procedural Errors and Improvements}
+
+\noindent \textbf{Procedural Errors}
+\begin{itemize}
+  \item In regards to errors, there are factors that limit the most precise and 
+        accurate readings. One of these factors are the software limiting us to 
+        specific decimal places
+  \item Additionally, the scale is limited to four places past the decimal point
+        allowing for error.
+  \item Another factor is the air track we used to simulate a frictionless surface
+        for the carts to glide upon. Of course it would be impossible to get a 
+        perfectly frictionless surface in the context of this lab, but without that
+        preciseness, this lab is error prone.
+  \item Finally, in the software itself of data studio, a dfferent selection of 
+        data would yield different results. This could lead not only errors, but
+        a biased selection of data.
+  \item$\star$ It is noted that our error was awful for this lab, we re-ran trials 
+               multiple times included with your supervision, but still we were 
+               getting extremely high error. You advised us to not use this lab
+               as a formal write up.
+\end{itemize}
+
+\noindent \textbf{Improvements}
+\begin{itemize}
+  \item If I could reccomend something to be improved, it would be a better printed
+        procedural section. Some parts of the print were messed up make it difficult
+        to read and understand.
+\end{itemize}
+
+\chapter*{\centering Rotational Inertia of a Point Mass Lab}
+\begin{center}
+  \Huge ``Freebie''
+\end{center}
+
+\chapter*{\centering Centripetal Force Lab}
+\begin{center}
+  \Huge ``Freebie''
+\end{center}
+
+\chapter*{Archimede's Principle Lab}
+
+\chapter*{Simple Pendulum Lab}
 
 \end{document}
