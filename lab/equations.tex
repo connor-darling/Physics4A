@@ -10,7 +10,7 @@
 \usepackage{changepage}
 \usepackage{gensymb}
 
-\title{\Huge Equations Live Here\\
+\title{\Huge Physics Equations Live Here\\
 {\huge Physics 4A}}
 \author{
   \Large Connor Darling\\\\
@@ -241,8 +241,125 @@ definitely error involved.
   \Huge ``Freebie''
 \end{center}
 
-\chapter*{Archimede's Principle Lab}
 
 \chapter*{Simple Pendulum Lab}
+
+\section*{RSS Error}
+
+\begin{center}
+  \noindent Greatest contributors are used to calculate RSS error
+  \begin{equation*}
+      \text{RSS\% Error} = \sqrt{ \left( \frac{0.00005kg}{0.0104kg} \right)^2 
+      + \left( \frac{0.0005 m}{0.193 m} \right)^2 + \left( \frac{0.00005 s}{0.8991 s} \right)^2}
+      \times 100\% = 0.55\%
+  \end{equation*}
+\end{center}
+
+\section*{Back-End Error \% Difference}
+
+\begin{center}
+  \begin{equation*}
+    \text{\% Difference} = \frac{|E_1 - E_2|}{\frac{(E_1 + E_2)}{2}} \times 100\% 
+    = \frac{|1.3836 s - 1.3978 s|}{\frac{(1.3836 s + 1.3978 s)}{2}} \times 100\% = 1.01\%
+  \end{equation*}
+\end{center}
+
+\noindent Percent difference should be used to calculate error between the times of different mass, amplitudes, and lengths, 
+because we are calculating multiple experimental values and comparing their differences. 
+
+\section*{Back-End Error \% Error}
+
+  \begin{equation*}
+      \% \text{error} = \frac{|E - K|}{K} \times 100 \% = \frac{|9.8 m/s^2 - 9.6369 m/s^2|}{9.6369 m/s^2} = 1.69\%
+  \end{equation*}
+
+\noindent Percent error should be used to calculate error between the $g_{experimental}$
+and the $g_{theoretical}$, because $g$ is a scientifically known and accepted value. That being
+said, we want to know how off we were when attempted to acieve this value experimentally.
+
+\newpage 
+
+\section*{4 - Procedural Errors and Improvements}
+
+\noindent \textbf{Procedural Errors}
+\begin{itemize}
+  \item In regards to errors, there are factors that limit the most precise and 
+        accurate readings. One of these factors are the timer limiting the time
+        to four decimal places.
+  \item Additionally, the scale is limited to four places past the decimal point
+        allowing for error.
+  \item Another factor is actually measuring the length of the string. We had to
+        rely on a meter stick and were only accurate within three decimal places.
+        We actually ran into an issue where our initial data was skewed by a bad 
+        reading of the length of the string, leading us to have our gravitational
+        acceleration as around $35 \frac{m}{s^2}$. Once we re-measured, we were able to get
+        a much more accurate representaion of $g_{experimental}$.
+\end{itemize}
+
+\noindent \textbf{Improvements}
+\begin{itemize}
+  \item If I could recommend something to be improved, it would to be much more
+        careful when measuring the length of the string to the center of the mass.
+        My partner and I really suffered the consequences due to this negligance.
+\end{itemize}
+
+\chapter*{Archimede's Principle Lab}
+
+\section*{RSS Error}
+
+\begin{center}
+  \noindent Greatest contributors are used to calculate RSS error.
+  \begin{equation*}
+      \text{RSS\% Error} = \sqrt{ \left( \frac{0.00005 kg}{0.0505 kg} \right)^2 
+      + \left( \frac{0.00005 m}{0.0355 m} \right)^2}
+      \times 100\% = 0.17\%
+  \end{equation*}
+\end{center}
+
+\section*{Back-End Error \% Error}
+
+  \begin{equation*}
+      \% \text{error} = \frac{|E - K|}{K} \times 100 \% 
+  \end{equation*}
+
+  \begin{equation*}
+      \% \text{error}_{Small \; Can} = \frac{|0.1536 \; kg - 0.1592 \; kg|}{0.1592 \; kg} = 3.52\%
+  \end{equation*}
+  % where $E = 0.1536 \; kg$ and $K = 0.1592 \; kg$.
+
+  \begin{equation*}
+      \% \text{error}_{Large \; Can} = \frac{|0.2583 \; kg - 0.2761 \; kg|}{0.2761 \; kg} = 6.45\%
+  \end{equation*}
+
+  \noindent I decided to use percent error, because instead of comparing two experimental values,
+  we are comparing a calculated value with a measured value. That being the value derived from 
+  Archimede's Principle, and the actually value we measured when placing mass into the cylinder.
+  However, the Theory section of the lab has noted that ``the experimental mass needed to sink the
+  can will be the calculated mass and the theoretical mass will be the measured one.''
+
+  \newpage
+
+  \section*{4 - Procedural Errors and Improvements}
+
+    \noindent \textbf{Procedural Errors}
+    \begin{itemize}
+      \item In regards to errors, there are factors that limit the most precise and 
+            accurate readings. One of these factors are the callipers limiting measurments
+            to four decimal places.
+      \item Additionally, the scale is limited to four places past the decimal point
+            allowing for error.
+      \item Another factor that could have led to error is the force used to place a mass
+            inside the cans while measuring how much mass it took to sink. It is entirely
+            possible that we used too much force which could have led to the can filling with water
+            and sinling prematurely.
+    \end{itemize}
+
+    \noindent \textbf{Improvements}
+    \begin{itemize}
+      \item If I could recommend something to be improved, it would to be much more
+            careful when putting the mass inside the can. Due to my partner and I taking
+            a lot of time with another lab, we were really rushed with time. Due to this
+            I would make sure we ensure there is adequate time to finish both labs.
+    \end{itemize}
 
 \end{document}
