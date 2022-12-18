@@ -5,43 +5,67 @@ for my final exam.
 
 %% ! 1-D Kinematics
 \chapter*{1-D Kinematics}
-\section*{Horizontal Equations of Motion}
-  \begin{equation*}
-    v(t) = v_0 + at
-  \end{equation*}
 
-  \begin{equation*}
-    x(t) = x_0 + v_0t + \frac{1}{2}at^2
-  \end{equation*}
+\fbox{\begin{minipage}{0.35\textwidth}
+    \textbf{Horizontal Equations of Motion}
+      \begin{equation*}
+        v_f = v_0 + at
+      \end{equation*}
+      \begin{equation*}
+        x_f = x_0 + v_0t + \frac{1}{2}at^2
+      \end{equation*}
+      \begin{equation*}
+        x_f = x_0 + \frac{1}{2}[v_0 + v_f]t
+      \end{equation*}
+      \begin{equation*}
+        v^2_f = v^2_0 + 2a[x_f - x_0]
+      \end{equation*}
+    \textbf{Vertical Equations of Motion}
+      \begin{equation*}
+        v_f = v_0 - gt
+      \end{equation*}
+      \begin{equation*}
+        y_f = y_0 + v_0t - \frac{1}{2}gt^2
+      \end{equation*}
+      \begin{equation*}
+        y_f = y_0 + \frac{1}{2}[v_0 + v_f]t
+      \end{equation*}
+      \begin{equation*}
+        v^2_f = v^2_0 - 2g[y_f - y_0]
+      \end{equation*}
+  \vspace{0.5cm}
+  \end{minipage}}
 
-  \begin{equation*}
-    x(t) = x_0 + \frac{1}{2}[v_0 + v(t)]t
-  \end{equation*}
 
-  \begin{equation*}
-    v^2(t) = v^2_0 + 2a[x(t) - x_0]
-  \end{equation*}
 
-\section*{Vertical Equations of Motion}
-
-  \begin{equation*}
-    v(t) = v_0 - gt
-  \end{equation*}
-
-  \begin{equation*}
-    y(t) = y_0 + v_0t - \frac{1}{2}gt^2
-  \end{equation*}
-
-  \begin{equation*}
-    y(t) = y_0 + \frac{1}{2}[v_0 + v(t)]t
-  \end{equation*}
-
-  \begin{equation*}
-    v^2(t) = v^2_0 - 2a[y(t) - y_0]
-  \end{equation*}
 
 %% ! Torque 
 \chapter*{Torque}
+
+\fbox{\begin{minipage}{0.6\textwidth}
+    \textbf{Torque}
+
+    \begin{equation*}
+      \tau = \vec{r} \times \vec{F}
+      % \phantom{\hspace{12cm}}
+    \end{equation*}
+
+    \begin{equation*}
+      \tau = I\alpha
+      % \phantom{\hspace{12cm}}
+    \end{equation*}
+
+    \begin{itemize}
+      \item Need to know direction of torque
+      \item Use right hand rule (fingers curve direction of rotation, torque is where thumb points)
+      \item $\omega \; \& \; \alpha$ are the basics
+      \item Torque is orthogonal to rotation
+      \item Torque is the function of moment arm from origin
+    \end{itemize}
+
+  \vspace{0.5cm}
+  \end{minipage}}
+
 
 %% ! Gravitation
 \chapter*{Gravitation}
@@ -49,11 +73,54 @@ for my final exam.
 \section*{Kepler's 3rd Law}
   \begin{equation*}
     T^2 = \left(\frac{4\pi^2}{GM_s}\right)r^3
+    \phantom{\hspace{10cm}}
   \end{equation*}
 
 %% !Fluids
 \chapter*{Fluids}
 \section*{Continuity Equation}
+  For incompressible flow $(\rho_1 = \rho_2)$:\\\\
+    $A_1 v_1 = A_2 v_2 = \text{constant}$\\
+
+  \noindent consequences: small tube, high speed\\
+  \hspace*{21.5mm} large tube, low speed\\
+
+  \begin{equation*}
+      Av = \left[ \frac{volume}{time} \right] = \text{volume flux = flow rate}
+    \phantom{\hspace{10cm}}
+  \end{equation*}
+
+  \noindent ``what goes in must come out''
+
+  \section*{Bernoulli's Equation}
+  \begin{equation*}
+      P_1 + \frac{1}{2} \rho v^2_1 + \rho g y_1 = P_2 + \frac{1}{2} \rho v^2_2 + \rho g y_2
+    \phantom{\hspace{10cm}}
+  \end{equation*}
+
+  \hspace*{7mm} \noindent \textcolor{orange}{\bf{OR}}
+
+  \begin{equation*}
+      P + \frac{1}{2} \rho v^2 + \rho g y = \text{constant}
+    \phantom{\hspace{12cm}}
+  \end{equation*}
+
+  \hspace*{7mm} \noindent \textcolor{orange}{\textbf{OR} when fluid is at rest, $v_1 = v_2 = 0$}
+
+  \begin{equation*}
+      (P_1 - P_2) = \rho gy_2 - \rho gy_1 = \rho g(y_2 - y_1) = \rho gh
+    \phantom{\hspace{12cm}}
+  \end{equation*}
+
+  \begin{equation*}
+      P_1 + \rho gy_1 = P_2 + \rho gy_2
+    \phantom{\hspace{12cm}}
+  \end{equation*}
+
+  \begin{equation*}
+      P_1 = P_2 + \rho g(y_2 - y_1)
+    \phantom{\hspace{12cm}}
+  \end{equation*}
 
 %% ! Oscillations
 \chapter*{Oscillations}
@@ -100,25 +167,120 @@ for my final exam.
   \begin{equation*}
     {\text{Where } \omega^2 = \frac{k}{m}}
   \end{equation*}
-  
-  \section*{Terms and equations}
-  \begin{mdframed}[  linecolor=red,  border color  backgroundcolor=yellow,
-     background color  linewidth=2pt,
-      line width  innerleftmargin=10pt,
-       left padding  innerrightmargin=10pt,
-        right padding  innertopmargin=10pt,
-         top padding  innerbottommargin=10pt
-          bottom padding]
+
+  \newpage
+
+\fbox{\begin{minipage}{0.5\textwidth}
+    \textbf{Definition of Terms}
     \begin{equation*}
-      x(t) = Acos(\omega t + \delta)
+      x(t) = A\cos(\omega t+\delta)
     \end{equation*}
-    Where:\\
-    $x(t)$ is displacement at time $t$\\
-    $A$ is the amplitude\\
-    $\omega$ is the angular frequency\\
-    $t$ is the time\\
-    $\delta$ is the phase constant\\
-    $(\omega t + \delta)$ is the phase
-  \end{mdframed}
 
+    \noindent $x(t)$: Displacement at time $t$\\
+    \noindent $A$: Amplitude\\
+    \noindent $\omega$: Angular Frequency\\
+    \noindent $t$: Time\\
+    \noindent $\delta$: Phase Constant\\
+    \noindent $(\omega t+\delta)$: Phase\\
 
+    \noindent The period, $T$, is the time for the particle\\
+    \noindent to go through one full cycle of its motion.\\
+    \noindent The phase increases by $2\pi$ in a time $T$\\
+
+    \begin{equation*}
+      \omega t + \delta + 2\pi = \omega (t + T) + \delta
+      % \phantom{\hspace{12cm}}
+    \end{equation*}
+
+    \begin{equation*}
+      \hspace*{0mm} 2\pi = \omega T
+    \end{equation*}
+
+    \begin{equation*}
+      \hspace*{0mm} T = \frac{2\pi}{\omega} = 2\pi \sqrt{\frac{m}{k}}
+    \end{equation*}
+
+    \begin{equation*}
+      \text{The freq. is inverse of period } \(\freq\) = \frac{1}{T} 
+       = \frac{\omega}{2\pi} = \frac{1}{2\pi}\sqrt{\frac{k}{m}}
+    \end{equation*}
+
+    \begin{equation*}
+      \text{rearranging } \omega = 2\pi \(\freq\) = \frac{2\pi}{T}
+    \end{equation*}
+
+  \vspace{0.5cm}
+  \end{minipage}}
+
+%!
+
+\fbox{\begin{minipage}{0.5\textwidth}
+    \textbf{Pendulum}
+    \noindent The simple pendulum is another mechanical system that exhibits
+    periodic, oscillatory motion
+    \begin{equation*}
+      \frac{d^2\theta}{dt^2} = -\frac{g}{L}\theta 
+      \hspace*{4mm} {\text{which is similar to  } \frac{d^2x}{dt^2} = -\omega^2x}
+    \end{equation*}
+
+    \begin{equation*}
+      \omega = \sqrt{\frac{g}{L}}
+      \hspace*{4mm} {\text{and  } T = 2\pi \sqrt{\frac{L}{g}}}
+    \end{equation*}
+  \vspace{0.5cm}
+  \end{minipage}}
+
+\fbox{\begin{minipage}{0.5\textwidth}
+    \textbf{Physical Pendulum}
+    \noindent A physicsal pendulum consists of any rigid body suspended from
+    a fixed axis that does not pass through the body's center of mass
+    \begin{equation*}
+      \frac{d^2\theta}{dt^2} = -\frac{mgd}{I}\theta 
+    \end{equation*}
+
+    \begin{equation*}
+      \omega = \sqrt{\frac{mgd}{I}}
+      \hspace*{4mm} {\text{and  } T = 2\pi \sqrt{\frac{I}{mgd}}}
+    \end{equation*}
+  \vspace{0.5cm}
+  \end{minipage}}
+
+  \fbox{\begin{minipage}{0.5\textwidth}
+    \textbf{What About A \& $\delta$}
+
+    \begin{equation*}
+      x(t) &= A\cos(\omega t+\delta) \rightarrow x_0 = A\cos\delta
+      \phantom{\hspace{12cm}}
+    \end{equation*}
+
+    \begin{equation*}
+      v(t) = -A\omega \sin(\omega t+\delta) \rightarrow v_0 = -A\omega \sin\delta
+      \phantom{\hspace{12cm}}
+    \end{equation*}
+
+    \noindent Dividing these EQ's
+
+    \begin{equation*}
+      \frac{v_0}{x_0} = -\omega \tan \delta
+      \phantom{\hspace{12cm}}
+    \end{equation*}
+
+    \begin{equation*}
+      \tan\delta = - \frac{v_0}{\omega x_0}
+      \phantom{\hspace{12cm}}
+    \end{equation*}
+
+    \noindent Taking sum of squares:
+
+    \begin{equation*}
+      x^2_0 + \left(\frac{v_0}{\omega}\right)^2 = A^2(\cos\delta)^2
+      = A^2[(\sin\delta)^2 + (\cos\delta)^2]
+      \phantom{\hspace{12cm}}
+    \end{equation*}
+
+    \begin{equation*}
+      A = \sqrt{x^2_0 + \left(\frac{v_0}{\omega}\right)^2}
+      \phantom{\hspace{12cm}}
+    \end{equation*}
+    
+  \end{minipage}}
