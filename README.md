@@ -1,9 +1,10 @@
 # Physics 4A
 This course is the first physics course at Saddleback College focusing 
 on mechanics. These projects are published in GitHub because I was 
-required to create 2 formal lab write-up. Because I heard by Computer Science
+required to create 2 formal lab write-ups. Because I heard my Computer Science
 professor Begalli uses the programming language LaTeX, I decided to give it a
-shot and use LaTeX to create my formal lab write-ups. 
+shot and use LaTeX to create my formal lab write-ups as well as my first LaTeX
+documents as well!. 
 
 - *Formal 1: Lab about Measuring g
 - *Formal 2: Hooke's Law lab
